@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 375px;
+  --color-heading-1: hsl(0, 0%, 100%);
+  --color-heading-2: hsl(217, 19%, 35%);
+  --color-verified-1: hsl(0 0% 100% / 0.3);
+  --color-verified-2: hsl(217 19% 35% / 0.7);
+  --color-quote-1: hsl(0 0% 100% / 0.5);
+  --color-quote-2: hsl(217 19% 35% / 0.5);
+}
+
+main {
+  width: 375px;
+  background-color: hsl(210, 46%, 95%);
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin: 0 auto;
+}
+
+article + article {
+  margin-top: 25px;
+}
+
+article {
+  width: 325px;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
+
+.article-container {
+  margin-left: 33px;
+  margin-right: 33px;
+  padding-bottom: 30px;
+  padding-top: 25px;
+}
+
+.article-header {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  grid-template-rows: 15px 15px;
+}
+
+.profile-picture {
+  width: 30px;
+  border-radius: 50%;
+  grid-row-start: 1;
+  grid-row: span 2;
+}
+
+.picture-border {
+  border: 2px solid var(--color-verified-1);
+}
+
+.violet-border {
+  background-color: white;
+  border: 2px solid hsl(263 55% 52% / 0.7);
+}
+
+.verified {
+  font-size: 0.85rem;
+}
+
+.review {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.violet-article {
+  background-color: hsl(263, 55%, 52%);
+}
+
+.violet-wrap {
+  width: 38ch;
+}
+
+.grey-article {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.white-article {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.blue-article {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.white-heading {
+  color: var(--color-heading-1);
+}
+
+.white-transparent-subheading {
+  color: var(--color-verified-1);
+}
+
+.white-transparent-text {
+  color: var(--color-quote-1);
+}
+
+.grey-heading {
+  color: var(--color-heading-2);
+}
+
+.grey-transparent-subheading {
+  color: var(--color-verified-2);
+}
+
+.grey-transparent-text {
+  color: var(--color-quote-2);
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    background-color: hsl(210, 46%, 95%);
+    width: 100%;
+  }
+  main {
+    width: 76.4vmax;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 2.73vmin;
+    column-gap: 3vmin;
+    margin: 8.73vmax;
+  }
+  article {
+    width: 100%;
+  }
+  article + article {
+    margin: 0;
+  }
+  .violet-wrap {
+    width: 100%;
+  }
+  .grid-column-span {
+    grid-column: span 2;
+  }
+  .grid-row-span {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
