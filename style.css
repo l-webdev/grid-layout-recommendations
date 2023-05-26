@@ -77,6 +77,9 @@ p {
 }
 
 .violet-article {
+  -background-image: url("images/left_double_quotation_mark.svg");
+  -background-size: 35vmin;
+  -background-repeat: no-repeat;
   background-color: hsl(263, 55%, 52%);
 }
 
@@ -130,8 +133,8 @@ p {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 2.73vmin;
-    column-gap: 3vmin;
+    row-gap: 1.79vmax;
+    column-gap: 2.14vmax;
     margin: 8.73vmax;
   }
   article {
